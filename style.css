@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+}
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.mainTitle {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   max-width: 250px;
+   height: 50px;
+   font-size: 25px;
+   color: white;
+   background-color: #2d545a;
+   border-radius: 0 0 10px 10px;
+}
+.textBox {
+   margin-top: 20px;
+   width: 200px;
+   border: 1px solid gray;
+}
+.addItem {
+   height: 30px;
+   width: 60px;
+   margin: 10px 0 20px 0;
+   border: none;
+   color: white;
+   font-size: 15px;
+   font-weight: 500;
+   background-color: #D18C1D;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: 0.5s ease-in-out;
+}
+.addItem:hover {
+   background-color: #ab100f;
+   border-radius: 0;
+   transition: 0.5s ease-in-out;
+}
+ul{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   list-style-type: none;
+   padding: 25px;
+   width: 250px;
+   background-color: rgba(128, 128, 128, 0.2);
+}
+li {
+   margin: 5px 0;
+   padding: 10px;
+   width: 200px;
+   background-color: white;
+   border-radius: 10px;
+   color: #2d545a;
+   border: 1px solid #2d545a;
+   transition: 0.5s ease-in-out;
+}
+li:hover {
+   transition: 0.5s ease-in-out;
+   border-radius: 0;
+}
+/* li:nth-child(1){
+   font-size: 16px;
+   font-weight: 600;
+   color: #2d545a;
+   border: 1px solid #2d545a;
+   border-radius: 0;
+} */
+li span{
+   float: right;
+   text-align: center;
+   font-weight: 700;
+   height: 20px;
+   width: 20px;
+   margin-right: 5px;
+   color: #ab100f;
+   border: 1px solid #ab100f;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: 0.5s ease-in-out;
+   align-self: center;
+}
+li span:hover {
+   transition: 0.5s ease-in-out;
+   color: white;
+   background-color: #ab100f;
+   border: #ab100f;
+}
+.preventEmpty {
+   z-index: 10;
+   position: relative;
+   bottom: 75px;
+   font-size: 11px;
+   color: #ab100f;
+   display: none;
+}
+.preventEmpty.active{
+   display: flex;
+}
+.preventEmpty.inactive{
+   display: none;
+}
